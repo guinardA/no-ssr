@@ -1,27 +1,26 @@
-# NoSsrWorkspace
+# angular-no-ssr
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.1.
+## Build library
 
-## Development server
+```bash
+npm run build-lib
+```
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Code source
 
-## Code scaffolding
+[Library code source](./projects/angular-no-ssr)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Contributing
 
-## Build
+1. Fork it!
+2. Create your feature branch: `git checkout -b my-new-feature`
+3. Commit your changes: `git commit -am 'Add some feature'`
+4. Push to the branch: `git push origin my-new-feature`
+5. Submit a pull request :D
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Author
 
-## Running unit tests
+**angular-no-ssr** © [Guinard Arnaud](https://github.com/guinardA), Released under the [MIT](./LICENSE) License.<br>
+Authored and maintained by Guinard Arnaud with help from contributors ([list](https://github.com/guinardA/no-ssr/contributors)).
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+> Linkedin [Guinard Arnaud](https://fr.linkedin.com/in/arnaud-guinard-a74503a7) · GitHub [guinardA](https://github.com/guinardA)
