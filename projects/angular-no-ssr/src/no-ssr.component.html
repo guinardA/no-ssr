@@ -1,5 +1,5 @@
 <div>
-  @if (!isBrowser) {
+  @if (isBrowser) {
     <ng-content></ng-content>
   } @else {
     <ng-content select="ssr-placeholder"></ng-content>
