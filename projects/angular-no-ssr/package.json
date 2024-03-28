@@ -1,6 +1,6 @@
 {
   "name": "angular-no-ssr",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Angular component to wrap non SSR component",
   "repository": {
     "type": "git",
