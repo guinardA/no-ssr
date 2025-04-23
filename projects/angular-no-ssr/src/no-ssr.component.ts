@@ -1,10 +1,11 @@
-import { isPlatformBrowser } from '@angular/common';
+import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { Component, Directive, Inject, PLATFORM_ID } from '@angular/core';
 
 @Component({
   selector: 'no-ssr',
   templateUrl: './no-ssr.component.html',
-  styleUrl: './no-ssr.component.scss'
+  styleUrl: './no-ssr.component.scss',
+  imports: [CommonModule],
 })
 export class NoSsrComponent {
   isBrowser: boolean;
@@ -16,6 +17,5 @@ export class NoSsrComponent {
 
 @Directive({
   selector: 'ssr-placeholder',
-  standalone: true
 })
 export class NoSsrPlaceholderDirective {}
