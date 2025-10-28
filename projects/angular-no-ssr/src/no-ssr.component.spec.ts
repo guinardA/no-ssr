@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { Component, PLATFORM_ID } from '@angular/core';
-import { NoSsrModule } from './no-ssr.module';
+import { NoSsrComponent, NoSsrPlaceholderDirective } from 'angular-no-ssr';
 
 @Component({
   template: `
@@ -10,7 +10,8 @@ import { NoSsrModule } from './no-ssr.module';
         <div id="placeholder">loading</div>
       </ssr-placeholder>
     </no-ssr>
-  `
+  `,
+  imports: [NoSsrComponent, NoSsrPlaceholderDirective],
 })
 class NoSsrTestComponent { }
 
@@ -20,8 +21,8 @@ describe('NoSsrComponent - browser mode', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      imports: [NoSsrModule],
-      declarations: [NoSsrTestComponent]
+      imports: [],
+      declarations: []
     }).compileComponents();
   });
 
@@ -52,8 +53,8 @@ describe('NoSsrComponent - server mode', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      imports: [NoSsrModule],
-      declarations: [NoSsrTestComponent],
+      imports: [],
+      declarations: [],
       providers: [{ provide: PLATFORM_ID, useValue: 'server' }]
     }).compileComponents();
   });

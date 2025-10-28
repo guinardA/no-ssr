@@ -1,6 +1,6 @@
 {
   "name": "angular-no-ssr",
-  "version": "19.0.0",
+  "version": "20.0.0",
   "description": "Angular component to wrap non SSR component",
   "repository": {
     "type": "git",
@@ -17,11 +17,11 @@
     "url": "https://github.com/guinardA/no-ssr/issues"
   },
   "peerDependencies": {
-    "@angular/common": "^19.2.0",
-    "@angular/core": "^19.2.0"
+    "@angular/common": "^20.1.7",
+    "@angular/core": "^20.1.7"
   },
   "dependencies": {
-    "tslib": "^2.8.0"
+    "tslib": "^2.8.1"
   },
   "sideEffects": false
 }
